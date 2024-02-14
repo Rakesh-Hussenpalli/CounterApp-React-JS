@@ -1,20 +1,20 @@
-import React, { useState } from 'react'
-import './index.css'
+import React, { useState } from 'react';
+import './index.css';
 
 const Counter = () => {
-    const [count, setCount] = useState(0)
+    const [count, setCount] = useState(0);
     const increaseCount = () => {
-        setCount(count + 1)
+        setCount(count + 1);
     }
     const decreaseCount = () => {
-        setCount(count - 1)
+        setCount(count - 1);
     }
-    let colour
+    let colour;
     if (count > 0) {
-        colour = "green"
+        colour = "green";
     }
     if (count < 0) {
-        colour = "red"
+        colour = "red";
     }
     return (
         <div className="bg-container">
